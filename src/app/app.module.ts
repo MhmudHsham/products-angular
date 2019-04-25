@@ -7,6 +7,8 @@ import { HeaderComponent } from './core/header/header.component';
 import { TopHeaderComponent } from './core/header/top-header/top-header.component';
 import { MiddleHeaderComponent } from './core/header/middle-header/middle-header.component';
 import { EndHeaderComponent } from './core/header/end-header/end-header.component';
+import { LoginComponent } from './features/login/login.component'; 
+import { ProductsComponent } from './features/products/products.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { EndHeaderComponent } from './core/header/end-header/end-header.componen
     HeaderComponent,
     TopHeaderComponent,
     MiddleHeaderComponent,
-    EndHeaderComponent
+    EndHeaderComponent,
+    LoginComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
