@@ -9,6 +9,11 @@ import { MiddleHeaderComponent } from './core/header/middle-header/middle-header
 import { EndHeaderComponent } from './core/header/end-header/end-header.component';
 import { LoginComponent } from './features/login/login.component'; 
 import { ProductsComponent } from './features/products/products.component';
+import { RegisterComponent } from './features/register/register.component';
+import { AboutusComponent } from './features/aboutus/aboutus.component';
+import { ContactusComponent } from './features/contactus/contactus.component';
+import { AddProductComponent } from './features/add-product/add-product.component';
+import { ProductDetailsComponent } from './features/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { ProductsComponent } from './features/products/products.component';
     MiddleHeaderComponent,
     EndHeaderComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    RegisterComponent,
+    AboutusComponent,
+    ContactusComponent,
+    AddProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
