@@ -31,27 +31,7 @@
             </ul>
         </div>
         <!-- filter tags -->
-        <div>
-            <!-- filter header -->
-            <h5>Tags</h5>
-            <!-- filter tags -->
-            <div class="tags">
-                <span class="tag">Nike</span>
-                <span class="tag">Travel</span>
-                <span class="tag">Sport</span>
-                <span class="tag">Tv</span>
-                <span class="tag">Books</span>
-                <span class="tag">Tech</span>
-                <span class="tag">Addidas</span>
-                <span class="tag">Promo</span>
-                <span class="tag">Reading</span>
-                <span class="tag">Social</span>
-                <span class="tag">New</span>
-                <span class="tag">Special</span>
-                <span class="tag">Food</span>
-                <span class="tag">Used</span>
-            </div>
-        </div>
+        
         <!-- related items -->
         <div>
             <!-- title -->
@@ -79,148 +59,30 @@
         <!-- items -->
         <div class="item-listing__items item-listing--3items">
             <!-- medium item -->
-            <div class="item-medium-1">
+            
+
+
+
+
+            <div class="item-medium-1" *ngFor="let product of products">
                 <div class="item-medium-1__alert">Sale</div>
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
+                <div class="item-medium-1__image image" style.backgroundImage="url('{{product.image[0]}}')">
+                    <a href="javascript:;" class="item-medium-1__action">Add to Cart</a>
                 </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
+                <a routerLink="/products/{{product.id}}">
+                    <h4>{{product.title}}</h4>
                     <div class="flex-row">
                         <div>
-                            <del>$325</del>
-                            <span class="lable">$299</span>
+                            <del>${{product.price}}</del>
+                            <span class="lable">${{product.price - product.discount}}</span>
                         </div>
                     </div>
                 </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
             </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__alert">Sale</div>
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__alert">Sale</div>
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="item-medium-1">
-                <div class="item-medium-1__alert">Sale</div>
-                <div class="item-medium-1__image image" style="background-image: url('assets/img/products/product-grey-1.jpg')">
-                    <a href="#" class="item-medium-1__action">Add to Cart</a>
-                </div>
-                <a href="#">
-                    <h4>Photo Camera</h4>
-                    <div>
-                        <del>$325</del>
-                        <span class="lable">$299</span>
-                    </div>
-                </a>
-                <div class="crud-actions">
-                    <a href="#"><i class="far fa-eye"></i></a>
-                    <a href="#"><i class="fas fa-edit"></i></a>
-                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </div>
-            </div>
+            
+            
+
+
         </div>
         <!-- paging -->
         <div class="paging">
